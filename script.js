@@ -23,6 +23,12 @@ onload = function(){
   attStride[0] = 3;
   attStride[1] = 4;
 
+var pointSphere = sphere(16, 16, 2.0);
+var pPos = create_vbo(pointSphere.p);
+var pCol = create_vbo(pointSphere.c);
+var pVBOList = [pPos, pCol];
+	
+
   // 頂点属性を格納する配列
   var position = [
      0.0, 2.0, 0.0,
