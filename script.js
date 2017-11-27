@@ -77,8 +77,8 @@ onload = function(){
 
     // モデルはY軸を中心に回転する
     m.identity(wMatrix);
-    m.translate(wMatrix, [1.0, -10.0, 0.0], wMatrix);
-    m.rotate(wMatrix, rad, [0, 1, 0], wMatrix);
+    m.translate(wMatrix, [1.0, -1.0, 0.0], wMatrix);
+    m.rotate(wMatrix, rad, [0, 3, 0], wMatrix);
 
     // モデルの座標変換行列を完成させレンダリングする
     m.multiply(vpMatrix, wMatrix, wvpMatrix);
