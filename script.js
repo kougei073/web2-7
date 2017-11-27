@@ -1,5 +1,5 @@
 onload = function(){
-var c = document.getElementById('canvas');
+ var c = document.getElementById('canvas');
   c.width = 500;
   c.height = 300;
 
