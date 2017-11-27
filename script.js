@@ -6,7 +6,7 @@ canvas.height = 300;
 var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
 
 gl.clearColor(0.0, 0.0, 0.0, 1.0);
-gl.clear(gl.COLOR_BUFFER_BIT);
+gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
   var v_shader = create_shader('vs');
     var f_shader = create_shader('fs');
